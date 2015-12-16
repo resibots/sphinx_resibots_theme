@@ -4947,6 +4947,7 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
 }
 .rst-content tt.literal, .rst-content tt.literal, .rst-content code.literal {
   color: #E74C3C;
+  white-space: normal;
 }
 .rst-content tt.xref, a .rst-content tt, .rst-content tt.xref, .rst-content code.xref, a .rst-content tt, a .rst-content code {
   font-weight: bold;
