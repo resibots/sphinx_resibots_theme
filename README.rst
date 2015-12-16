@@ -201,6 +201,10 @@ you can add something like this to your config. Thanks to Daniel Oaks for this.
 
     # otherwise, readthedocs.org uses their theme by default, so no need to specify it
 
+Authors
+=======
+In chronological order: Dave Snider ,Dorian Goepp
+
 TODO
 ====
 * Separate some sass variables at the theme level so you can overwrite some basic colors.
