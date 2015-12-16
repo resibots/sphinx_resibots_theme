@@ -203,7 +203,7 @@ you can add something like this to your config. Thanks to Daniel Oaks for this.
 
 Authors
 =======
-In chronological order: Dave Snider ,Dorian Goepp
+In chronological order: Dave Snider, Dorian Goepp
 
 TODO
 ====
