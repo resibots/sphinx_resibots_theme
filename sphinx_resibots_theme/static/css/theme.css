@@ -4370,7 +4370,7 @@ div[class^='highlight'] pre {
   padding: 0.809em;
   margin-bottom: 0.809em;
   z-index: 200;
-  background-color: #2980B9;
+  background-color: #555;
   text-align: center;
   padding: 0.809em;
   display: block;
@@ -4419,7 +4419,7 @@ div[class^='highlight'] pre {
   margin-top: -0.4045em;
   margin-bottom: 0.809em;
   font-weight: normal;
-  color: rgba(255, 255, 255, 0.3);
+  color: #c8c8c8;
 }
 
 .wy-nav .wy-menu-vertical header {
