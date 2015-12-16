@@ -86,10 +86,16 @@
         <div class="wy-side-nav-search">
           {% block sidebartitle %}
 
-          {% if logo and theme_logo_only %}
-            <a href="{{ pathto(master_doc) }}">
+          {% if theme_logo_url %}
+            {%- set logo_url = theme_logo_url %}
           {% else %}
-            <a href="{{ pathto(master_doc) }}" class="icon icon-home"> {{ project }}
+            {%- set logo_url = pathto(master_doc) %}
+          {% endif %}
+
+          {% if logo and theme_logo_only %}
+            <a href="{{ logo_url }}">
+          {% else %}
+            <a href="{{ logo_url }}" class="icon icon-home"> {{ project }}
           {% endif %}
 
           {% if logo %}
