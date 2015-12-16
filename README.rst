@@ -13,16 +13,13 @@
 Read the Docs Sphinx Theme
 **************************
 
-.. contents:: 
+.. contents::
 
 View a working demo_ over on readthedocs.org_.
 
 This is a mobile-friendly sphinx_ theme I made for readthedocs.org_. It's
 currently in development there and includes some rtd variable checks that can be ignored
 if you're just trying to use it on your project outside of that site.
-
-**This repo also exists as a submodule within the readthedocs itself**, so please make your edits to
-the SASS files here, rather than the .css files on RTD.
 
 .. image:: screen_mobile.png
     :width: 100%
@@ -32,6 +29,8 @@ Installation
 
 Via package
 -----------
+
+FIXME: our derivated theme is not yet published on pip.
 
 Download the package or add it to your ``requirements.txt`` file:
 
@@ -43,22 +42,22 @@ In your ``conf.py`` file:
 
 .. code:: python
 
-    import sphinx_rtd_theme
+    import sphinx_resibots_theme
 
-    html_theme = "sphinx_rtd_theme"
+    html_theme = "sphinx_resibots_theme"
 
-    html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+    html_theme_path = [sphinx_resibots_theme.get_html_theme_path()]
 
 Via git or download
 -------------------
 
-Symlink or subtree the ``sphinx_rtd_theme/sphinx_rtd_theme`` repository into your documentation at
-``docs/_themes/sphinx_rtd_theme`` then add the following two settings to your Sphinx
+Symlink or subtree the ``sphinx_resibots_theme/sphinx_resibots_theme`` repository into your documentation at
+``docs/_themes/sphinx_resibots_theme`` then add the following two settings to your Sphinx
 conf.py file:
 
 .. code:: python
 
-    html_theme = "sphinx_rtd_theme"
+    html_theme = "sphinx_resibots_theme"
     html_theme_path = ["_themes", ]
 
 Changelog
@@ -79,7 +78,7 @@ v0.1.9
 * Fixed modernizr URL
 * Small display style changes on code blocks, figure captions, and nav elements
 
-.. _#215: https://github.com/snide/sphinx_rtd_theme/pull/215
+.. _#215: https://github.com/snide/sphinx_resibots_theme/pull/215
 
 v0.1.8
 ------
@@ -112,7 +111,7 @@ altogether change the setting in ``conf.py``.
 Contributing or modifying the theme
 ===================================
 
-The sphinx_rtd_theme is primarily a sass_ project that requires a few other sass libraries. I'm
+The sphinx_resibots_theme is primarily a sass_ project that requires a few other sass libraries. I'm
 using bower_ to manage these dependencies and sass_ to build the css. The good news is
 I have a very nice set of grunt_ operations that will not only load these dependencies, but watch
 for changes, rebuild the sphinx demo docs and build a distributable version of the theme.
@@ -185,7 +184,7 @@ extraneous files. Please do this before you send in a PR.
 Using this theme locally, then building on Read the Docs?
 ==========================================================
 
-Currently if you import sphinx_rtd_theme in your local sphinx build, then pass
+Currently if you import sphinx_resibots_theme in your local sphinx build, then pass
 that same config to Read the Docs, it will fail, since RTD gets confused. If
 you want to run this theme locally and then also have it build on RTD, then
 you can add something like this to your config. Thanks to Daniel Oaks for this.
@@ -196,9 +195,9 @@ you can add something like this to your config. Thanks to Daniel Oaks for this.
     on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
     if not on_rtd:  # only import and set the theme if we're building docs locally
-        import sphinx_rtd_theme
-        html_theme = 'sphinx_rtd_theme'
-        html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+        import sphinx_resibots_theme
+        html_theme = 'sphinx_resibots_theme'
+        html_theme_path = [sphinx_resibots_theme.get_html_theme_path()]
 
     # otherwise, readthedocs.org uses their theme by default, so no need to specify it
 

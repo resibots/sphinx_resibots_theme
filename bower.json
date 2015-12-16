@@ -1,11 +1,12 @@
 {
-  "name": "sphinx-rtd-theme",
+  "name": "sphinx-resibots-theme",
   "version": "0.1.9",
   "homepage": "https://github.com/snide/wyrm",
   "authors": [
-    "Dave Snider <dave.snider@gmail.com>"
+    "Dave Snider <dave.snider@gmail.com>",
+    "Dorian Goepp <dorian.goepp@gmail.com>"
   ],
-  "description": "Sphinx theme for readthedocs.org.",
+  "description": "Sphinx theme for resibots.eu.",
   "license": "MIT",
   "main": [
     "js/theme.js"
