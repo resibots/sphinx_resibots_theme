@@ -15,14 +15,18 @@ Read the Docs Sphinx Theme
 
 .. contents::
 
-View a working demo_ over on readthedocs.org_.
+View a working demo_ of the original theme over on readthedocs.org_.
 
-This is a mobile-friendly sphinx_ theme I made for readthedocs.org_. It's
-currently in development there and includes some rtd variable checks that can be ignored
-if you're just trying to use it on your project outside of that site.
+This is a mobile-friendly sphinx_ theme Dave Snider made for readthedocs.org_.
+Dorian Goepp forked it to fit the needs of the ResiBots project. The original
+theme is currently in development by Read the Docs and includes some rtd variable checks that can be
+ignored if you're just trying to use it on your project outside of that site.
 
-.. image:: screen_mobile.png
+.. figure:: screen_mobile.png
     :width: 100%
+    :alt: the original Read the Docs theme
+
+    Screeshots for the original Read the Docs theme, before our modifications
 
 Installation
 ============
@@ -62,6 +66,16 @@ conf.py file:
 
 Changelog
 =========
+
+master branch
+-------------
+
+* Background color of the menu changed
+* Allow to define custom URL for the logo, or link in the sidebar
+* Possible to add links above and bellow the table of contents
+* Disable the folding of sections in the table of contents
+* Allow to add a "contact us" link in the footer, to a custom URL
+* Option to change the name of the root node in the breadcrumb
 
 v0.1.9
 ------
