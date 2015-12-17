@@ -110,10 +110,10 @@ html_theme_options = {
     # 'sticky_navigation': True  # Set to False to disable the sticky nav while scrolling.
     # 'logo_only': True,  # if we have a html_logo below, this shows /only/ the logo with no title text
     # 'logo_url': 'http://localhost:1919/demo.html', # set a custom URL for the logo
-    'toc_befores': [('ResiBots', 'http://resibots.eu'),
-        ('limbo', 'http://resibots.eu/limbo/')],
-    'toc_afters': [('Read the Docs', 'https://readthedocs.org/'),
-        ('Wikimedia', 'https://www.wikimedia.org/')],
+    # 'toc_befores': [('ResiBots', 'http://resibots.eu'), # add links above the TOC
+    #     ('limbo', 'http://resibots.eu/limbo/')],
+    # 'toc_afters': [('Read the Docs', 'https://readthedocs.org/'), # add links bellow the TOC
+    #     ('Wikimedia', 'https://www.wikimedia.org/')],
     # 'breadcrumb_root': 'Docs', # set a custom name to the breacumb root
     # 'contact_url': 'mailto:contact@yourcompany.domain', # add a "Contact us link" at the bottom with URL
 }
