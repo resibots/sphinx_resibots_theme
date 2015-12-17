@@ -110,6 +110,10 @@ html_theme_options = {
     # 'sticky_navigation': True  # Set to False to disable the sticky nav while scrolling.
     # 'logo_only': True,  # if we have a html_logo below, this shows /only/ the logo with no title text
     # 'logo_url': 'http://localhost:1919/demo.html', # set a custom URL for the logo
+    'toc_befores': [('ResiBots', 'http://resibots.eu'),
+        ('limbo', 'http://resibots.eu/limbo/')],
+    'toc_afters': [('Read the Docs', 'https://readthedocs.org/'),
+        ('Wikimedia', 'https://www.wikimedia.org/')],
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
