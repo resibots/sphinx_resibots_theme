@@ -115,6 +115,7 @@ html_theme_options = {
     'toc_afters': [('Read the Docs', 'https://readthedocs.org/'),
         ('Wikimedia', 'https://www.wikimedia.org/')],
     # 'breadcrumb_root': 'Docs', # set a custom name to the breacumb root
+    # 'contact_url': 'mailto:contact@yourcompany.domain', # add a "Contact us link" at the bottom with URL
 }
 
 # Add any paths that contain custom themes here, relative to this directory.

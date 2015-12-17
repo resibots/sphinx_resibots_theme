@@ -4661,6 +4661,23 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
     margin-left: 0;
   }
 }
+.wy-footer div {
+  display: inline-block;
+}
+.wy-footer div.wy-footer-aside {
+  float: right;
+}
+
+@media screen and (max-width: 480px) {
+  .wy-footer div.wy-footer-aside {
+    display: none;
+  }
+}
+@media print {
+  .wy-footer div.wy-footer-aside {
+    display: none;
+  }
+}
 .rst-versions {
   position: fixed;
   bottom: 0;

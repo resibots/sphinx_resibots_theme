@@ -12,39 +12,50 @@
 
   <hr/>
 
-  <div role="contentinfo">
-    <p>
-    {%- if show_copyright %}
-      {%- if hasdoc('copyright') %}
-        {% trans path=pathto('copyright'), copyright=copyright|e %}&copy; <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}
-      {%- else %}
-        {% trans copyright=copyright|e %}&copy; Copyright {{ copyright }}.{% endtrans %}
+  <div role="contentinfo" class="wy-footer">
+    <div role="contentinfo">
+      <p>
+      {%- if show_copyright %}
+        {%- if hasdoc('copyright') %}
+          {% trans path=pathto('copyright'), copyright=copyright|e %}&copy; <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}
+        {%- else %}
+          {% trans copyright=copyright|e %}&copy; Copyright {{ copyright }}.{% endtrans %}
+        {%- endif %}
       {%- endif %}
-    {%- endif %}
 
-    {%- if build_id and build_url %}
-      {% trans build_url=build_url, build_id=build_id %}
-        <span class="build">
-          Build
-          <a href="{{ build_url }}">{{ build_id }}</a>.
-        </span>
-      {% endtrans %}
-    {%- elif commit %}
-      {% trans commit=commit %}
-        <span class="commit">
-          Revision <code>{{ commit }}</code>.
-        </span>
-      {% endtrans %}
-    {%- elif last_updated %}
-      {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}
-    {%- endif %}
+      {%- if build_id and build_url %}
+        {% trans build_url=build_url, build_id=build_id %}
+          <span class="build">
+            Build
+            <a href="{{ build_url }}">{{ build_id }}</a>.
+          </span>
+        {% endtrans %}
+      {%- elif commit %}
+        {% trans commit=commit %}
+          <span class="commit">
+            Revision <code>{{ commit }}</code>.
+          </span>
+        {% endtrans %}
+      {%- elif last_updated %}
+        {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}
+      {%- endif %}
 
-    </p>
+      {# Optionally add contact link #}
+      {% if theme_contact_url %}
+        <br/>
+        <a href="{{theme_contact_url}}">{% trans %} Contact us {% endtrans %}</a>
+      {% endif %}
+      </p>
+    </div>
+    <div class="wy-footer-aside">
+      {%- if show_sphinx %}
+      {% trans %}Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="http://resibots.eu">Resibots</a>{% endtrans %}.
+      {%- endif %}
+    </div>
+    <div style="clear: both;"></div>
   </div>
 
-  {%- if show_sphinx %}
-  {% trans %}Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="http://resibots.eu">Resibots</a> and derived from <a href="https://readthedocs.org">Read the Docs</a>{% endtrans %}.
-  {%- endif %}
+
 
   {%- block extrafooter %} {% endblock %}
 

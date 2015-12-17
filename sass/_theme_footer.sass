@@ -1,0 +1,13 @@
+.wy-footer div
+  display: inline-block
+  &.wy-footer-aside
+    float: right
+
+
++media($mobile)
+  .wy-footer div.wy-footer-aside
+    display: none
+
+@media print
+  .wy-footer div.wy-footer-aside
+    display: none
