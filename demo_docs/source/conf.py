@@ -114,6 +114,7 @@ html_theme_options = {
         ('limbo', 'http://resibots.eu/limbo/')],
     'toc_afters': [('Read the Docs', 'https://readthedocs.org/'),
         ('Wikimedia', 'https://www.wikimedia.org/')],
+    # 'breadcrumb_root': 'Docs', # set a custom name to the breacumb root
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
