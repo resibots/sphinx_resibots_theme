@@ -15,7 +15,9 @@ module.exports = function(grunt) {
         options: {
           port: 1919,
           base: 'demo_docs/build',
-          livereload: true
+          livereload: true,
+          // uncomment to make this available from other computer
+          // hostname: '0.0.0.0'
         }
       }
     },

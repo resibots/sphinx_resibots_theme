@@ -86,10 +86,16 @@
         <div class="wy-side-nav-search">
           {% block sidebartitle %}
 
-          {% if logo and theme_logo_only %}
-            <a href="{{ pathto(master_doc) }}">
+          {% if theme_logo_url %}
+            {%- set logo_url = theme_logo_url %}
           {% else %}
-            <a href="{{ pathto(master_doc) }}" class="icon icon-home"> {{ project }}
+            {%- set logo_url = pathto(master_doc) %}
+          {% endif %}
+
+          {% if logo and theme_logo_only %}
+            <a href="{{ logo_url }}">
+          {% else %}
+            <a href="{{ logo_url }}" class="icon icon-home"> {{ project }}
           {% endif %}
 
           {% if logo %}
@@ -117,12 +123,26 @@
 
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           {% block menu %}
+            {# Display extra links before the table of contents #}
+            {% if theme_toc_befores %}
+              {% for link_before in theme_toc_befores %}
+                  <a class="caption" href="{{link_before[1]}}">{{link_before[0]}}</a>
+              {% endfor %}
+            {% endif %}
+
             {% set toctree = toctree(maxdepth=4, collapse=theme_collapse_navigation, includehidden=True) %}
             {% if toctree %}
                 {{ toctree }}
             {% else %}
                 <!-- Local TOC -->
                 <div class="local-toc">{{ toc }}</div>
+            {% endif %}
+
+            {# Display extra links after the table of contents #}
+            {% if theme_toc_afters %}
+              {% for link_after in theme_toc_afters %}
+                <a class="caption" href="{{link_after[1]}}">{{link_after[0]}}</a>
+              {% endfor %}
             {% endif %}
           {% endblock %}
         </div>
