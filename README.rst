@@ -22,38 +22,8 @@ Dorian Goepp forked it to fit the needs of the ResiBots project. The original
 theme is currently in development by Read the Docs and includes some rtd variable checks that can be
 ignored if you're just trying to use it on your project outside of that site.
 
-.. figure:: screen_mobile.png
-    :width: 100%
-    :alt: the original Read the Docs theme
-
-    Screeshots for the original Read the Docs theme, before our modifications
-
 Installation
 ============
-
-Via package
------------
-
-FIXME: our derivated theme is not yet published on pip.
-
-Download the package or add it to your ``requirements.txt`` file:
-
-.. code:: bash
-
-    $ pip install sphinx_rtd_theme
-
-In your ``conf.py`` file:
-
-.. code:: python
-
-    import sphinx_resibots_theme
-
-    html_theme = "sphinx_resibots_theme"
-
-    html_theme_path = [sphinx_resibots_theme.get_html_theme_path()]
-
-Via git or download
--------------------
 
 Symlink or subtree the ``sphinx_resibots_theme/sphinx_resibots_theme`` repository into your documentation at
 ``docs/_themes/sphinx_resibots_theme`` then add the following two settings to your Sphinx
@@ -216,9 +186,4 @@ you can add something like this to your config. Thanks to Daniel Oaks for this.
     # otherwise, readthedocs.org uses their theme by default, so no need to specify it
 
 Authors
-=======
-In chronological order: Dave Snider, Dorian Goepp
-
-TODO
-====
-* Separate some sass variables at the theme level so you can overwrite some basic colors.
+In chronological order: Dave Snider, Dorian Goepp=======
