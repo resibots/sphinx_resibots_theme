@@ -38,7 +38,7 @@ conf.py file:
 Changelog
 =========
 
-master branch
+v.0.2.0
 -------------
 
 * Background color of the menu changed
