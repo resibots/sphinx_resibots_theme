@@ -16,7 +16,7 @@ Read the Docs Sphinx Theme
 
 .. contents::
 
-View our website_ to see how it looks, or a working demo_ of the original theme over on readthedocs.org_.
+View our website_ to see how this theme looks and feels. There is also a working demo_ of the original theme over on readthedocs.org_.
 
 This is a mobile-friendly sphinx_ theme Dave Snider made for readthedocs.org_.
 Dorian Goepp forked it to fit the needs of the ResiBots project. The original
