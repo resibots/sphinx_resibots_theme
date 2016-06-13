@@ -8,6 +8,7 @@
 .. _node: http://www.nodejs.com
 .. _demo: http://docs.readthedocs.org
 .. _hidden: http://sphinx-doc.org/markup/toctree.html
+.. _website: http://resibots.eu/
 
 **************************
 Read the Docs Sphinx Theme
@@ -15,7 +16,7 @@ Read the Docs Sphinx Theme
 
 .. contents::
 
-View a working demo_ of the original theme over on readthedocs.org_.
+View our website_ to see how it looks, or a working demo_ of the original theme over on readthedocs.org_.
 
 This is a mobile-friendly sphinx_ theme Dave Snider made for readthedocs.org_.
 Dorian Goepp forked it to fit the needs of the ResiBots project. The original
